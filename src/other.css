@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-button{
+button .button-primary{
     cursor: pointer;
 }
 
 .navbar{
     position: fixed;
     z-index: 1;
-    top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 .navbar-overlay{
@@ -34,7 +36,6 @@ body.open .navbar-overlay{
 
 .navbar-burger{
     position: absolute;
-    top: 0;
     right: 0;
     display: grid;
     margin-right: 10px;
@@ -70,7 +71,7 @@ body.open .navbar-menu{
     visibility: visible;
 }
 
-.navbar-menu > button{
+.navbar-menu > .button{
     transition: all 0.3s;
 }
 
